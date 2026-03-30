@@ -525,13 +525,13 @@ export const layoutCategories: LayoutCategory[] = [
   },
   {
     id: 'bento',
-    name: '🍱 Bento',
+    name: 'Bento',
     description: 'Японский стиль',
     layouts: ['bento-grid', 'bento-sidebar', 'bento-hero', 'bento-masonry']
   },
   {
     id: 'fibonacci',
-    name: '🐚 Fibonacci',
+    name: 'Fibonacci',
     description: 'Пропорции природы',
     layouts: [
       'fibonacci-grid', 'fibonacci-spiral', 'fibonacci-columns', 'fibonacci-tiles', 
@@ -542,8 +542,8 @@ export const layoutCategories: LayoutCategory[] = [
   },
   {
     id: 'math',
-    name: '📐 Математические',
-    description: 'φ, π, √, простые числа',
+    name: 'Math',
+    description: 'Phi, Pi, roots, primes',
     layouts: [
       'golden-ratio-grid', 'spiral-grid', 'phi-grid', 'rule-of-thirds',
       'root-rectangle', 'dynamic-symmetry', 'harmonic-series', 'pi-grid',
@@ -569,10 +569,10 @@ export const layoutCategories: LayoutCategory[] = [
  * Project goal labels (Russian)
  */
 export const goalLabels: Record<string, string> = {
-  'landing': '🚀 Лендинг',
-  'admin-panel': '📊 Админ-панель',
-  'blog': '✍️ Блог',
-  'ecommerce': '🛒 Магазин'
+  'landing': 'Landing',
+  'admin-panel': 'Admin Panel',
+  'blog': 'Blog',
+  'ecommerce': 'E-commerce'
 };
 
 /**

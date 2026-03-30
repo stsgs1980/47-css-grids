@@ -581,7 +581,7 @@ function LayoutPreview({ fullscreen = false }: { fullscreen?: boolean }) {
             <div className="absolute" style={{ top: '70%', left: '5%', right: '55%', bottom: '5%' }}>
               <div className="h-full border-2 border-dashed rounded flex items-center justify-center text-xs bg-muted/30">5</div>
             </div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs font-medium" style={{ color: 'var(--accent)' }}>🌀</div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs font-medium" style={{ color: 'var(--accent)' }}>Spiral</div>
           </div>
         );
         

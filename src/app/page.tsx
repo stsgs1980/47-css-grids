@@ -42,17 +42,17 @@ function AdvisorFooter() {
           <div className="flex items-center gap-1.5">
             {errorCount > 0 && (
               <span className="px-1.5 py-0.5 text-[10px] rounded bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400">
-                {errorCount} ⚠️
+                {errorCount} errors
               </span>
             )}
             {warningCount > 0 && (
               <span className="px-1.5 py-0.5 text-[10px] rounded bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400">
-                {warningCount} 💡
+                {warningCount} tips
               </span>
             )}
             {successCount > 0 && (
               <span className="px-1.5 py-0.5 text-[10px] rounded bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400">
-                {successCount} ✅
+                {successCount} ok
               </span>
             )}
           </div>
@@ -135,7 +135,7 @@ function SettingsTab() {
       
       <div className="space-y-4">
         <div className="p-4 rounded-lg border bg-muted/30">
-          <h3 className="font-medium mb-2">📖 Как пользоваться</h3>
+          <h3 className="font-medium mb-2">How to use</h3>
           <ol className="text-sm text-muted-foreground space-y-2">
             <li>1. Выберите цель проекта в шапке</li>
             <li>2. Кликните на макет для предпросмотра</li>
@@ -146,7 +146,7 @@ function SettingsTab() {
         
         <div className="p-4 rounded-lg border bg-green-50 dark:bg-green-950/30 border-green-200 dark:border-green-800">
           <h3 className="font-medium mb-2 text-green-700 dark:text-green-300">
-            ✅ Что вы узнаете
+            What you will learn
           </h3>
           <ul className="text-sm text-muted-foreground space-y-1">
             <li>• Какие макеты подходят для разных проектов</li>
@@ -175,10 +175,10 @@ function RecommendationsTab() {
         <div className="p-4 rounded-lg border bg-muted/30">
           <p className="text-sm text-muted-foreground mb-1">Тип проекта</p>
           <p className="font-medium">
-            {projectGoal === 'landing' && '🚀 Лендинг'}
-            {projectGoal === 'admin-panel' && '📊 Админ-панель'}
-            {projectGoal === 'blog' && '✍️ Блог'}
-            {projectGoal === 'ecommerce' && '🛒 Интернет-магазин'}
+            {projectGoal === 'landing' && 'Landing'}
+            {projectGoal === 'admin-panel' && 'Admin Panel'}
+            {projectGoal === 'blog' && 'Blog'}
+            {projectGoal === 'ecommerce' && 'E-commerce'}
           </p>
         </div>
         
@@ -190,7 +190,7 @@ function RecommendationsTab() {
         <div className="p-4 rounded-lg border bg-muted/30">
           <p className="text-sm text-muted-foreground mb-1">Тема</p>
           <p className="font-medium">
-            {theme.mode === 'light' ? '☀️ Светлая' : '🌙 Тёмная'}
+            {theme.mode === 'light' ? 'Light' : 'Dark'}
           </p>
         </div>
         
@@ -204,7 +204,7 @@ function RecommendationsTab() {
       
       {selectedLayout && (
         <div className="p-6 rounded-lg border bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 border-green-200 dark:border-green-800">
-          <h3 className="font-bold text-lg mb-3">💡 Рекомендация</h3>
+          <h3 className="font-bold text-lg mb-3">Recommendation</h3>
           <p className="text-muted-foreground mb-4">{selectedLayout.techNotes}</p>
           
           <div className="space-y-2">
@@ -222,7 +222,7 @@ function RecommendationsTab() {
       
       {selectedLayout && selectedLayout.conflicts.includes(projectGoal) && (
         <div className="p-6 rounded-lg border bg-red-50 dark:bg-red-950/30 border-red-200 dark:border-red-800">
-          <h3 className="font-bold text-lg mb-3 text-red-600 dark:text-red-400">⚠️ Внимание!</h3>
+          <h3 className="font-bold text-lg mb-3 text-red-600 dark:text-red-400">Warning!</h3>
           <p className="text-muted-foreground">
             Макет <strong>{selectedLayout.name}</strong> не рекомендуется для "{projectGoal}".
           </p>

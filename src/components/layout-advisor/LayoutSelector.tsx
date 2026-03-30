@@ -69,7 +69,7 @@ function LayoutCard({ layout, isSelected, hasConflict, isBestMatch, onClick }: L
               <Badge variant="destructive" className="text-[10px] px-1.5">!</Badge>
             )}
             {isBestMatch && !hasConflict && (
-              <Badge variant="outline" className="text-[10px] px-1.5 border-green-500 text-green-600">✓</Badge>
+              <Badge variant="outline" className="text-[10px] px-1.5 border-green-500 text-green-600">OK</Badge>
             )}
           </div>
           <p className="text-xs text-muted-foreground line-clamp-2 mt-0.5">

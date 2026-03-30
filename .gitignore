@@ -49,3 +49,16 @@ prompt
 server.log
 # Skills directory
 /skills/
+
+# Database files (binary)
+*.db
+*.sqlite
+*.sqlite3
+db/backups/
+
+# Archives
+*.tar.gz
+*.zip
+
+# Upload folder
+/upload/

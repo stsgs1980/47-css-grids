@@ -76,7 +76,7 @@ function AdviceCard({ advice, compact }: { advice: Advice; compact?: boolean }) 
           <p className="text-sm text-muted-foreground">{advice.message}</p>
           {advice.suggestion && (
             <p className="text-xs text-muted-foreground italic mt-2 pl-3 border-l-2 border-muted-foreground/30">
-              💡 {advice.suggestion}
+              Tip: {advice.suggestion}
             </p>
           )}
         </div>
@@ -136,7 +136,7 @@ function QuickLinks({ compact }: { compact?: boolean }) {
       <div className="grid grid-cols-3 gap-2 text-xs">
         {links.map(link => (
           <a key={link.label} href={link.url} target="_blank" rel="noopener noreferrer" className="p-2 bg-muted/50 rounded hover:bg-muted transition-colors text-center">
-            📖 {link.label}
+            {link.label}
           </a>
         ))}
       </div>
