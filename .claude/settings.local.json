@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx:*)",
+      "Bash(ping:*)",
+      "Bash(cat:*)"
+    ]
+  },
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": false,
+    "coderabbit@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true
+  },
+  "enabledSkills": {
+    "plugin:claude-plugins-official:skill-creator:skill-creator": false
+  }
+}
