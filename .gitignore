@@ -9,3 +9,7 @@ mini-services/
 .stats
 .accesslog
 dev.log
+
+# local sqlite (was leaking tracked db)
+*.db
+*.db-journal
